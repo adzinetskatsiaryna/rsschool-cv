@@ -70,14 +70,14 @@ Polish: B2 level
 ## My projects
 ****
 
-[Alexis: html, scss, js, gulp, ] (https://adzinetskatsiaryna.github.io/Alexis/dist/index#)
-[Counter: ReactJs, Redux] (https://adzinetskatsiaryna.github.io/counterRedux/)
-[Counter: TypeSript] (https://github.com/adzinetskatsiaryna/CounterTSX)
-[Training project: React, Redux, Api] (https://adzinetskatsiaryna.github.io/message/#/Tuesday)(https://github.com/adzinetskatsiaryna/message)
-[Game 'Cards': React, Redux, API] (https://github.com/adzinetskatsiaryna/cards)
-[Game 'Racing'] (https://adzinetskatsiaryna.github.io/newRacingGame/) (https://github.com/adzinetskatsiaryna/newRacingGame)
-[Todolist: js] (https://github.com/adzinetskatsiaryna/todoList_JS)
-[Lomoda: html, scss, js] (https://adzinetskatsiaryna.github.io/lomoda/) (https://github.com/adzinetskatsiaryna/lomoda)
+[Alexis: html, scss, js, gulp](https://adzinetskatsiaryna.github.io/Alexis/dist/index#)
+[Counter: ReactJs, Redux](https://adzinetskatsiaryna.github.io/counterRedux/)
+[Counter: TypeSript](https://github.com/adzinetskatsiaryna/CounterTSX)
+[Training project: React, Redux, Api](https://adzinetskatsiaryna.github.io/message/#/Tuesday)(https://github.com/adzinetskatsiaryna/message)
+[Game 'Cards': React, Redux, API](https://github.com/adzinetskatsiaryna/cards)
+[Game 'Racing'](https://adzinetskatsiaryna.github.io/newRacingGame/)(https://github.com/adzinetskatsiaryna/newRacingGame)
+[Todolist: js](https://github.com/adzinetskatsiaryna/todoList_JS)
+[Lomoda: html, scss, js](https://adzinetskatsiaryna.github.io/lomoda/)(https://github.com/adzinetskatsiaryna/lomoda)
 
 ## About Me 
 ****
