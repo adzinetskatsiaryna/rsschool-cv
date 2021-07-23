@@ -89,16 +89,12 @@ main .container{
 .skills-proects{
     max-width: 50%;  
 }
+
 .education ul{
-    margin: 0;
-    padding: 15px 5px;
-    
-}
-.education ul span{
     font-size: 20px;
     font-weight: bold;
-    display: inline-block;
-    margin-bottom: 10px;
+    margin: 0px;
+    padding: 10px 5px;
 }
 .education ul li::before{
     content: '';
@@ -119,17 +115,14 @@ main .container{
     justify-content: space-between;
     max-width: 60%;
     margin: 0;
-    padding: 15px 5px;
+    padding: 10px 5px;
 }
-.skills ul{
-    margin: 0;
-    padding: 15px 5px;
-}
-.skills ul span{
+
+.skills ul {
     font-size: 20px;
     font-weight: bold;
-    display: inline-block;
-    margin-bottom: 10px;
+    margin:0;
+    padding: 10px 5px;
 }
 .skills ul li::before{
     content: '';
@@ -149,7 +142,7 @@ main .container{
 
 .proects ul{
     margin: 0;
-    padding: 15px 5px;
+    padding: 10px 5px;
 }
 
 .proects ul li::before{
@@ -170,7 +163,7 @@ main .container{
 .language ul{
     font-size: 20px;
     margin: 0;
-    padding: 15px 5px;
+    padding: 10px 5px;
 }
 footer{
     background-image: url(./img/background.png);
