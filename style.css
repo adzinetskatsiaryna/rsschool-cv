@@ -1,0 +1,220 @@
+body {
+    background-position: center;
+    background-color: #fff;
+    color:  #272727;
+    overflow-x: hidden;
+}
+.container {   
+    max-width: 1100px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;  
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    opacity: 0.7;   
+}
+h1{
+    margin: 15px 0 10px 0;
+}
+header{
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+.contacts ul{
+    padding-left: 0px;
+    margin: 0 0 15px 0;
+}
+.contacts-list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 5px
+}
+.contacts-list a, span{
+    color: #272727;
+    font-weight: bold;
+    font-size: 15px;
+}
+.contacts-list img{
+    max-width: 25px;
+    display: block;
+    margin-right: 10px;
+}
+
+figure img{
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border: 7px solid #5f5c56;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #fff;
+}
+h3{
+    margin:0;
+    padding: 5px;
+    background-color: #e2cb91;
+    max-width: 200px;
+    width: 100%;
+}
+.about p{
+    margin: 0;
+    padding: 15px 5px;
+    font-size: 20px;
+    text-align: justify;
+}
+main .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;    
+}
+.about-Me{
+    max-width: 50%;
+}
+.skills-proects{
+    max-width: 50%;  
+}
+.education ul{
+    margin: 0;
+    padding: 15px 5px;
+    
+}
+.education ul span{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.education ul li::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(./favicon/icons-arrow.png);
+    background-size: contain;  
+    margin-right: 5px; 
+}
+.education ul li{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+.interest ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: 0;
+    padding: 15px 5px;
+}
+.skills ul{
+    margin: 0;
+    padding: 15px 5px;
+}
+.skills ul span{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.skills ul li::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(./favicon/icons-arrow.png);
+    background-size: contain;  
+    margin-right: 5px; 
+}
+.skills ul li{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+
+.proects ul{
+    margin: 0;
+    padding: 15px 5px;
+}
+
+.proects ul li::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./favicon/icons-arrow-proect.png);
+    background-size: contain;  
+    margin-right: 5px; 
+}
+.proects a{
+    font-size: 20px;
+    font-weight: normal;
+    color: #272727;
+    margin-left: 10px;
+}
+.language ul{
+    font-size: 20px;
+    margin: 0;
+    padding: 15px 5px;
+}
+footer{
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0 20px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link-rss{
+    max-width: 100px;
+    width: 100%;  
+}
+.link-git{
+    max-width: 100px;
+    width: 100%;
+}
+@media all and (max-width: 1100px){
+    .container {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 500px){
+    figure img{
+        display: none;
+    }
+    header .container{
+        justify-content: flex-start;
+    }
+    h1{
+        font-size: 28px;
+    }
+    main .container{
+        flex-wrap: wrap;
+    }
+    .about-Me{
+        max-width: 100%;
+    }
+    .skills-proects{
+        max-width: 100%;  
+    }
+
+}
