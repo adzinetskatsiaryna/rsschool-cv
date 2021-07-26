@@ -65,7 +65,7 @@ figure img{
     padding: 10px;
     background-color: #fff;
 }
-h3{
+h2{
     margin:0;
     padding: 5px;
     background-color: #e2cb91;
@@ -89,7 +89,7 @@ main .container{
 .skills-proects{
     max-width: 50%;  
 }
-h4{
+h3{
     margin: 0;
     font-size: 20px;
 }
@@ -100,7 +100,7 @@ h4{
     margin: 0px;
     padding: 10px 5px;
 }
-.education h4{
+.education h3{
     margin-top: 10px;
 }
 .education ul li::before{
@@ -131,10 +131,10 @@ h4{
     margin:0;
     padding: 10px 5px;
 }
-.skills h4{
+.skills h3{
     margin-top: 10px;
 }
-.skills h4:last-child{
+.skills h3:last-child{
     margin-bottom: 10px;
 }
 .skills ul li::before{
