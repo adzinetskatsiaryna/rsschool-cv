@@ -89,12 +89,19 @@ main .container{
 .skills-proects{
     max-width: 50%;  
 }
+h4{
+    margin: 0;
+    font-size: 20px;
+}
 
 .education ul{
     font-size: 20px;
     font-weight: bold;
     margin: 0px;
     padding: 10px 5px;
+}
+.education h4{
+    margin-top: 10px;
 }
 .education ul li::before{
     content: '';
@@ -124,6 +131,12 @@ main .container{
     margin:0;
     padding: 10px 5px;
 }
+.skills h4{
+    margin-top: 10px;
+}
+.skills h4:last-child{
+    margin-bottom: 10px;
+}
 .skills ul li::before{
     content: '';
     display: inline-block;
@@ -137,14 +150,17 @@ main .container{
     font-size: 20px;
     font-weight: normal;
     margin-left: 10px;
+   
 }
-
-
 .proects ul{
     margin: 0;
-    padding: 10px 5px;
+    padding:10px 5px;
 }
-
+.proects ul li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
 .proects ul li::before{
     content: '';
     display: inline-block;
@@ -163,7 +179,7 @@ main .container{
 .language ul{
     font-size: 20px;
     margin: 0;
-    padding: 10px 5px;
+    padding:10px 5px;
 }
 footer{
     background-image: url(./img/background.png);
