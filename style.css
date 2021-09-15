@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto+Mono:wght@500&family=Roboto:wght@300;700&display=swap');
+html{
+    scroll-behavior: smooth;
+ }
 body {
     background-position: center;
     background-color: #fff;
@@ -10,6 +15,7 @@ body {
     width: 100%;
     margin: 0 auto;  
     box-sizing: border-box;
+    padding: 0 10px;
 }
 ul {
     list-style: none;
@@ -22,41 +28,185 @@ a:hover{
     opacity: 0.7;   
 }
 h1{
-    margin: 15px 0 10px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 20px 0 25px;
+    padding: 0 5px;
+}
+.js-header-fixed {
+    position: fixed;
+    background-color: #fff;
+    z-index: 300;
+}
+.menu-mob {
+    display: none;
+}
+.menu-mob li:hover{
+     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 300;
+    padding: 0;
+}
+.menu-btn:focus{
+    outline: none;
+}
+.menu-btn-lines,
+.menu-btn-lines::before,
+.menu-btn-lines::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition-duration: 0.6s;
+}
+.menu-btn-lines::before {
+        content: "";
+        top: -8px;
+}
+.menu-btn-lines::after {
+    content: "";
+    top: 8px;
+}
+.menu-btn-active {        
+    transform: rotate(45deg);
+}
+.menu-btn-active::before {
+    top: 0;
+    transform: rotate(0);
+}
+.menu-btn-active::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+.menu-box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: inset 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    transition-duration: 0.6s;
+    margin: 0;
+    padding: 60px 0;
+}
+.menu-box li{
+    margin:0;
+}
+.menu-show {
+    right: 0;
+}
+.menu-item {
+    display: block;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    transition-duration: 0.6s;
+    padding: 12px 0;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.menu-item:focus{
+    outline: none;
 }
 header{
     background-image: url(./img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /* height: 70px; */
+    top: 0;
+    right: 0;
+    left: 0;
+    position: relative;
 }
-header .container{
+.header-navigation{
     display: flex;
-    justify-content: space-around;
-    align-items: center;   
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; 
+    align-items: center; 
+    margin: 0;
+    padding: 20px 0;
 }
-.contacts ul{
-    padding-left: 0px;
-    margin: 0 0 15px 0;
+.header-navigation a{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+}
+.about{
+    padding: 15px 0;
+}
+.about .container{
+    display: flex;
+    justify-content: space-between; 
+}
+.about-title{
+    max-width: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -8px 4px 15px 2px rgb(0 0 0 / 20%);
+    padding: 15px 0;
+}
+.abot-description{
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-contacts{
+    margin: 0 0 7px 0;
+    padding: 0 5px;
 }
 .contacts-list{
     display: flex;
-    justify-content: start;
     align-items: center;
-    margin-bottom: 5px
+    justify-content: start;
+    margin-bottom: 10px;
 }
-.contacts-list a, span{
+.contacts-list:last-child{
+    margin-bottom: 0px;
+}
+.contacts-list img{
+    max-width: 30px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.about-contacts a, span{
+    font-family: 'Roboto', sans-serif;
     color: #272727;
     font-weight: bold;
     font-size: 15px;
-}
-.contacts-list img{
-    max-width: 25px;
-    display: block;
-    margin-right: 10px;
-}
+} 
 
-figure img{
-    max-width: 250px;
+.about-foto{
+    max-width: 150px;
     width: 100%;
     display: block;
     object-fit: cover;
@@ -66,42 +216,34 @@ figure img{
     background-color: #fff;
 }
 h2{
+    font-family: 'Roboto', sans-serif;
     margin:0;
     padding: 5px;
     background-color: #e2cb91;
-    max-width: 200px;
+    max-width: 300px;
     width: 100%;
 }
 .about p{
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 15px 5px;
     font-size: 20px;
     text-align: justify;
 }
-main .container{
+.education{
+    padding: 15px 0;
+}
+.education-container{
     display: flex;
-    justify-content: space-around;
-    align-items: stretch;    
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
 }
-.about-Me{
-    max-width: 50%;
-}
-.skills-proects{
-    max-width: 50%;  
-}
-h3{
-    margin: 0;
-    font-size: 20px;
-}
-
 .education ul{
     font-size: 20px;
     font-weight: bold;
     margin: 0px;
-    padding: 10px 5px;
-}
-.education h3{
-    margin-top: 10px;
+    padding: 0;
 }
 .education ul li::before{
     content: '';
@@ -113,29 +255,55 @@ h3{
     margin-right: 5px; 
 }
 .education ul li{
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: normal;
-    margin-left: 10px;
+    margin-bottom: 7px;
 }
-.interest ul{
+.education ul li:last-child{
+    margin-bottom: 0px;
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #5f5c56;
+}
+.about-interest{
     display: flex;
     justify-content: space-between;
-    max-width: 60%;
+    max-width: 50%;
     margin: 0;
-    padding: 10px 5px;
+    padding: 15px 0 0;
 }
-
+.language{
+    padding: 15px 0;
+}
+.language ul li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+.language ul {
+    margin: 0;
+    padding: 15px 0 0;
+}
+.skills{
+    padding: 15px 0;
+}
 .skills ul {
     font-size: 20px;
     font-weight: bold;
     margin:0;
-    padding: 10px 5px;
+    padding: 0;
 }
-.skills h3{
-    margin-top: 10px;
-}
-.skills h3:last-child{
-    margin-bottom: 10px;
+.skills-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    padding: 15px 0 0;
 }
 .skills ul li::before{
     content: '';
@@ -147,45 +315,71 @@ h3{
     margin-right: 5px; 
 }
 .skills ul li{
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: normal;
-    margin-left: 10px;
-   
+    margin-bottom: 7px;
 }
-.proects ul{
-    margin: 0;
-    padding:10px 5px;
+.proects{
+    padding: 15px 0;
 }
-.proects ul li{
+.proects-wrapper{
     display: flex;
-    align-items: center;
-    justify-content: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding: 15px 0;
 }
-.proects ul li::before{
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(./favicon/icons-arrow-proect.png);
-    background-size: contain;  
-    margin-right: 5px; 
+.proects-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 45%;
+    width: 100%;
+    padding: 15px 5px 0;
+    box-shadow: -8px 4px 15px 2px rgb(0 0 0 / 20%);
 }
-.proects a{
+.proects-container p{
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: normal;
-    color: #272727;
-    margin-left: 10px;
 }
-.language ul{
-    font-size: 20px;
-    margin: 0;
-    padding:10px 5px;
+.proects-link::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.proects-img{
+    height: 200px;
+    width: 220px;
+    background-position: center;
+    background-size: cover;   
+}
+.alexis{
+    background-image: url(./img/alexis.png);
+}
+.counter{
+    background-image: url(./img/counter.png);
+}
+.game-racing{
+    background-image: url(./img/spead-game.png);
+}
+.lomoda{
+    background-image: url(./img/lomoda.png);
+}
+.todo-list{
+    background-image: url(./img/todo-list.png);
 }
 footer{
     background-image: url(./img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px 0 20px;
+    padding: 20px 0;
 }
 footer .container{
     display: flex;
@@ -196,9 +390,19 @@ footer .container{
     max-width: 100px;
     width: 100%;  
 }
-.link-git{
-    max-width: 100px;
-    width: 100%;
+.link-git a{   
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 13px;
+    font-weight: bold; 
+}
+pre{
+    margin: 0;
+}
+.year{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;  
 }
 @media all and (max-width: 1100px){
     .container {
@@ -206,23 +410,53 @@ footer .container{
     }
 }
 
-@media all and (max-width: 500px){
-    figure img{
+@media all and (max-width: 850px){
+
+    header .menu-dekstop {
         display: none;
+      }
+    header .menu-mob {
+        display: block;
+      }
+    header{
+        height: 50px;
     }
-    header .container{
-        justify-content: flex-start;
+}
+
+@media all and (max-width: 740px){
+    .about .container{
+        flex-direction: column;
+        row-gap: 20px;
     }
-    h1{
-        font-size: 28px;
+    .about-title{
+        max-width: 100%;
+        width: 100%;
     }
-    main .container{
-        flex-wrap: wrap;
+    .abot-description{
+        max-width: 100%;
+        width: 100%;
     }
-    .about-Me{
+    .proects-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .proects-container {
         max-width: 100%;
     }
-    .skills-proects{
-        max-width: 100%;  
+    
+    .education-container {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
     }
+    .skills-container {
+        justify-content: flex-start
+    }
+
+}
+@media all and (max-width: 1100px){
+   .proects-img{
+        width: 150px;
+   }
 }
