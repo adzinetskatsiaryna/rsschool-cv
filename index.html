@@ -6,116 +6,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-    <header>
+    <header class="js-header">
         <div class="container">
-            <div class="header-title">
-                <h1>Adzinets Katsiaryna</h1>
-                <div class="contacts">
-                    <ul>
+           <nav class="menu-dekstop">
+               <ul class="header-navigation">
+                   <li><a href="#about-Me">About Me</a></li> 
+                   <li><a href="#education">Edukation</a></li>
+                   <li><a href="#skills">Skills</a></li>
+                   <li><a href="#proects">Proects</a></li>
+                   <li><a href="#language">Language</a></li>
+                   <li><a href="#my-code">Example of my code</a></li>
+               </ul>
+           </nav>
+           <div class="menu-mob" id="menu-mob">
+            <button class="menu-btn">
+                <span class="menu-btn-lines"></span>
+            </button>
+            <nav>
+                <ul class="menu-box">
+                    <li><a class="menu-item" href="#about-Me">About Me</a></li> 
+                   <li><a class="menu-item"  href="#education">Edukation</a></li>
+                   <li><a class="menu-item"  href="#skills">Skills</a></li>
+                   <li><a class="menu-item"  href="#proects">Proects</a></li>
+                   <li><a class="menu-item"  href="#language">Language</a></li>
+                   <li><a class="menu-item"  href="#my-code">Example of my code</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <main>               
+        <section class = "about" id="about-Me">
+            <div class="container">
+                <div class="about-title">
+                    <img class="about-foto" src="./favicon/icons-ava.png" alt="foto" title="foto">
+                    <h1>Adzinets Katsiaryna</h1>
+                    <ul class="about-contacts">
                         <li class="contacts-list"><img src="./favicon/icons-phon.png" alt="icon-phon"><a href="tel:+375298291485">+375 29-829-14-85</a></li>
                         <li class="contacts-list"><img src="./favicon/icons-email.png" alt="icon-email"><a href="mailto:adzinetskatsiaryna@gmail.com" target="_blank">adzinetskatsiaryna@gmail.com</a></li>
                         <li class="contacts-list"><img src="./favicon/icons-location.png" alt="icon-location"><span>Minsk, Cherwiakowa 23/141</span></li>
                         <li class="contacts-list"><img src="./favicon/icons-web.png" alt="icon-website"><a href="https://github.com/adzinetskatsiaryna" target="_blank">github.com</a></li>
                     </ul>
                 </div>
-            </div>
-            <figure>
-                <img src="./favicon/icons-ava.png" alt="foto" title="foto">
-            </figure>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="about-Me">
-                <section class = "about">
+                <div class="abot-description">
                     <h2>ABOUT ME</h2>
                     <P> I can summarize who I am in three words: determined, fast-learner and self confidence. 
-                            I have be interest in profession of Front end Developer. 
-                            My first steps have started by IT-Academy. My first project is the multi-page website. 
-                            After, I have written some sites and one game on React. I am prepared to learn and keep up to date, because 
-                            I want to skill highly level of JavaScript
+                        I have be interest in profession of Front end Developer. 
+                        My first steps have started by IT-Academy. My first project is the multi-page website. 
+                        After, I have written some sites and one game on React. I am prepared to learn and keep up to date, because 
+                        I want to skill highly level of JavaScript
                     </P>
-               
-                </section>    
-                <section class="education">
-                    <h2>EDUCATION</h2>
-                    <h3>I have a higher education</h3>
-                    <ul>
-                        <li>Brest State Technical University</li>
-                        <li>Higher banking school in Wroclaw</li>
-                    </ul>
-                    <h3>Сourses</h3>
-                    <ul>
-                        <li>IT-Academy (Minsk) - HTML, CSS </li>
-                        <li>IT incubator (Minsk) JS and React from may 2020 till now</li>
-                        <li>freeCodeCamp course JS</li>
-                        <li>codecademy HTML, CSS</li>
-                    </ul>
-                </section>
-                <section class="interest">
                     <h2>INTEREST</h2>
-                    <ul>
+                    <ul class="about-interest">
                         <li><img src="./favicon/icons-sport.png" alt="icon-sport"></li>
                         <li><img src="./favicon/icons-travel.png" alt="icon-travel"></li>
                         <li><img src="./favicon/icons-book.png" alt="icon-book"></li>
                         <li><img src="./favicon/icons-com.png" alt="icon-communication"></li>
                     </ul>
-                </section>
-                <section class="language">
-                    <h2>LANGUAGE</h2>
-                    <ul>
-                        <li>English: A2 level</li>
-                        <li>Polish: B2 level</li>
-                    </ul>
-                </section>      
+                </div>                
+            </div>        
+        </section>    
+        <section class="education" id="education">
+            <div class="container">
+                <h2>EDUCATION</h2>
+                <div class="education-container">
+                    <div> 
+                        <h3>I have a higher education</h3>
+                        <ul>
+                            <li>Brest State Technical University</li>
+                            <li>Higher banking school in Wroclaw</li>
+                        </ul>
+                    </div>
+                    <div> 
+                        <h3>Сourses</h3>
+                        <ul>
+                            <li>IT-Academy (Minsk) - HTML, CSS </li>
+                            <li>IT incubator (Minsk) JS and React from may 2020 till now</li>
+                            <li>freeCodeCamp course JS</li>
+                            <li>codecademy HTML, CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>        
+        </section>
+        <section class="language" id="language">
+            <div class="container">
+                <h2>LANGUAGE</h2>
+                <ul>
+                    <li>English: A2 level</li>
+                    <li>Polish: B2 level</li>
+                </ul>
+            </div>        
+        </section>      
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2>SKILLS</h2>
+                <div class="skills-container">
+                    <div>
+                        <h3>Programming languages:</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Markdown</li>    
+                        </ul>
+                    </div>
+                    <div> 
+                        <h3>Frameworks and libraries:</h3>
+                        <ul>
+                            <li>ReactJS</li>
+                            <li>Redux</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div> 
+                    <div>
+                        <h3>Working with the layout:</h3>
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div> 
+                    <div>
+                        <h3>Technologies used:</h3>
+                        <ul>
+                            <li>Gulp</li>
+                            <li>BEM</li>
+                            <li>Git(GitHub)</li>
+                        </ul>
+                    </div>
+                    <h3> work with API requests</h3>   
+                </div>
+            </div>            
+        </section>
+        <section class="proects" id="proects">
+            <div class="container">
+                <h2>PROECTS</h2>
+                <div class="proects-wrapper">
+                    <div class="proects-container">
+                        <div class="proects-left">
+                            <h3>Alexis</h3>
+                            <p>HTML, SCSS JS, Gulp</p>
+                            <a href="https://adzinetskatsiaryna.github.io/Alexis/dist/index#" target="_blank" class="proects-link"></a>
+                        </div>
+                        <div class="proects-right">
+                            <div class="proects-img alexis"></div>
+                        </div>
+                    </div>
+                    <div class="proects-container">
+                        <div class="proects-left">
+                            <h3>Counter</h3>
+                            <p>ReactJs, Redux</p>
+                            <a href="https://adzinetskatsiaryna.github.io/counterRedux/" target="_blank" class="proects-link"></a>
+                        </div>
+                        <div class="proects-right">
+                            <div class="proects-img counter"></div>
+                        </div>
+                    </div>
+                    <div class="proects-container">
+                        <div class="proects-left">
+                            <h3>Game 'Racing'</h3>
+                            <p>JS, HTML, CSS</p>
+                            <a href="https://adzinetskatsiaryna.github.io/racingGame/" target="_blank" class="proects-link"></a>
+                        </div>
+                        <div class="proects-right">
+                            <div class="proects-img game-racing"></div>
+                        </div>
+                    </div>
+                    <div class="proects-container">
+                        <div class="proects-left">
+                            <h3>Todo List</h3>
+                            <p>React, Redux, API</p>
+                            <a href="https://github.com/adzinetskatsiaryna/TodoList" target="_blank" class="proects-link"></a>
+                        </div>
+                        <div class="proects-right">
+                            <div class="proects-img todo-list"></div>
+                        </div>
+                    </div>
+                    <div class="proects-container">
+                        <div class="proects-left">
+                            <h3>Lomoda</h3>
+                            <p>HTML, SCSS, JS</p>
+                            <a href="https://adzinetskatsiaryna.github.io/lomoda/" target="_blank" class="proects-link"></a>
+                        </div>
+                        <div class="proects-right">
+                            <div class="proects-img lomoda"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section> 
+        <section class="my-code" id="my-code">
+            <div class="container">
+                <h2>Example of my code</h2>
+                <pre>
+                    <code>
+                        function maxSum(root) {
+                            if (root == null) {
+                                return 0;
+                            }
+                            let leftRoot = maxSum(root.left);
+                            let rightRoot = maxSum(root.right);
+                            return Math.max(leftRoot, rightRoot) + root.value
+                    </code>
+                </pre>
             </div>
-            <div class="skills-proects">
-                <section class="skills">
-                    <h2>SKILLS</h2>
-                    <h3>Programming languages:</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Markdown</li>    
-                    </ul>
-                    <h3>Working with frameworks and libraries:</h3>
-                    <ul>
-                        <li>ReactJS</li>
-                        <li>Redux</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                    <h3>Working with the layout:</h3>
-                    <ul>
-                        <li>Photoshop</li>
-                        <li>Figma</li>
-                    </ul>
-                    <h3>Technologies used:</h3>
-                    <ul>
-                        <li>Gulp</li>
-                        <li>BEM</li>
-                        <li>Git(GitHub)</li>
-                    </ul>
-                    <h3> work with API requests</h3>
-                   
-                </section>
-                <section class="proects">
-                    <h2>PROECTS</h2>
-                    <ul>
-                        <li><a href="https://adzinetskatsiaryna.github.io/Alexis/dist/index#" target="_blank">Alexis: HTML, SCSS JS, Gulp</a></li>
-                        <li><a href="https://adzinetskatsiaryna.github.io/counterRedux/" target="_blank">Counter: ReactJs, Redux</a></li>
-                        <li><a href="https://github.com/adzinetskatsiaryna/CounterTSX" target="_blank">Counter: TypeSript</a></li>
-                        <li><a href="https://adzinetskatsiaryna.github.io/message/#/Tuesday" target="_blank">Training project: React, Redux, API</a></li>
-                        <li><a href="https://github.com/adzinetskatsiaryna/cards" target="_blank">Game 'Cards': React, Redux, API</a></li>
-                        <li><a href="https://adzinetskatsiaryna.github.io/newRacingGame/" target="_blank">Game 'Racing': JS, HTML, CSS</a></li>
-                        <li><a href="https://github.com/adzinetskatsiaryna/todoList_JS" target="_blank">Todolist: JS, HTML, CSS</a></li>
-                        <li><a href="https://adzinetskatsiaryna.github.io/lomoda/" target="_blank">Lomoda: HTML, SCSS, JS</a></li>
-                    </ul>
-                </section>
-            </div> 
-        </div>      
+        </section>    
     </main>
     <footer>
         <div class="container">
@@ -124,12 +224,15 @@
                     <img src="./img/rs_school.svg" alt="icon-rs-school">
                 </a>
             </div>
+            <div class="year">2021</div>
             <div class="link-git">
-                <a href="https://github.com/adzinetskatsiaryna" target="_blank">
-                    <img src="./img/github_logo.svg" alt="icon-github">
+                    <a href="https://github.com/adzinetskatsiaryna" target="_blank">
+                    <p>GitHub Adzinetskatsiaryna</p>
+                    <!-- <img src="./img/github_logo.svg" alt="icon-github"> -->
                 </a>
             </div>
         </div>
-    </footer>   
+    </footer> 
+    <script src="./main.js"></script>  
 </body>
 </html>
